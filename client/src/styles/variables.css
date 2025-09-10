@@ -1,0 +1,88 @@
+/* CSS Variables for Theme System */
+:root {
+    /* Theme Colors - Easy to change! */
+    --primary-color: #3b82f6;
+    /* Blue (can change to green, purple, etc.) */
+    --primary-light: #60a5fa;
+    --primary-dark: #2563eb;
+
+    /* Background Colors */
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-input: #f1f5f9;
+    --bg-button: var(--primary-color);
+    --bg-button-hover: var(--primary-dark);
+    --bg-message-sent: var(--primary-color);
+    --bg-message-received: #e2e8f0;
+
+    /* Text Colors */
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --text-white: #ffffff;
+    --text-on-primary: #ffffff;
+
+    /* Border & Shadow */
+    --border-color: #e2e8f0;
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+
+    /* Typography */
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --line-height: 1.5;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-main: #0f172a;
+    --bg-card: #1e293b;
+    --bg-input: #334155;
+    --bg-message-received: #374151;
+
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
+
+    --border-color: #374151;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4);
+}
+
+/* Green Theme */
+[data-theme-color="green"] {
+    --primary-color: #10b981;
+    --primary-light: #34d399;
+    --primary-dark: #059669;
+    --bg-button: var(--primary-color);
+    --bg-button-hover: var(--primary-dark);
+    --bg-message-sent: var(--primary-color);
+}
+
+/* Purple Theme */
+[data-theme-color="purple"] {
+    --primary-color: #8b5cf6;
+    --primary-light: #a78bfa;
+    --primary-dark: #7c3aed;
+    --bg-button: var(--primary-color);
+    --bg-button-hover: var(--primary-dark);
+    --bg-message-sent: var(--primary-color);
+}
+
+/* Transitions */
+* {
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}

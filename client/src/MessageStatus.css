@@ -1,0 +1,88 @@
+/* Message Status Component Styles */
+.status-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.double-tick {
+  position: relative;
+  width: 24px;
+  height: 16px;
+}
+
+.tick-1,
+.tick-2 {
+  position: absolute;
+}
+
+.tick-2 {
+  left: 6px;
+}
+
+.read-count {
+  font-size: 0.65rem;
+  margin-left: 2px;
+  background-color: rgba(0, 255, 204, 0.3);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Tooltip styles */
+.readers-tooltip {
+  position: absolute;
+  bottom: 24px;
+  right: -5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  padding: 6px;
+  min-width: 120px;
+  display: none;
+  z-index: 100;
+}
+
+.status-container:hover .readers-tooltip {
+  display: block;
+}
+
+.tooltip-content {
+  color: white;
+  font-size: 12px;
+}
+
+.tooltip-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.readers-list {
+  margin: 0;
+  padding-left: 12px;
+  list-style-type: none;
+}
+
+.readers-list li {
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+/* Tooltip arrow */
+.readers-tooltip:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.8);
+}
