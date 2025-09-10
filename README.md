@@ -27,7 +27,7 @@ A WhatsApp-like chat application with modern features.
 
 1. Clone the repository
    ```
-   git clone https://github.com/YourUsername/TecChat.git
+   git clone https://github.com/MoisesCervera/TecChat.git
    cd TecChat
    ```
 
